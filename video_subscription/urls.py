@@ -21,6 +21,7 @@ from myVideoApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('membership', include('myVideoApp.urls', namespace='membership')),
     path('index', index, name='index'),
     path('', include('courses.urls', namespace='courses')),
 ]
@@ -28,3 +29,4 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
