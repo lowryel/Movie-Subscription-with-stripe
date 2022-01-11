@@ -21,7 +21,7 @@ from myVideoApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('membership', include('myVideoApp.urls', namespace='membership')),
+    path('membership', membership, name='membership'),
     path('index', index, name='index'),
     path('', include('courses.urls', namespace='courses')),
 ]
