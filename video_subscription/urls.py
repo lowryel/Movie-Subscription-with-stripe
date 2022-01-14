@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('membership', membership, name='membership'),
     path('index', index, name='index'),
+    # path('payment', Payment, name='payment'),
     path('courses/', include('courses.urls', namespace='courses')),
 ]
 
