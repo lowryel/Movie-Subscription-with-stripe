@@ -5,7 +5,7 @@ from myVideoApp.models import *
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-import stripe
+# import stripe
 
 
 def index(request):
